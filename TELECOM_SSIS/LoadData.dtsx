@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadData"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{A8BB6E1D-4752-4982-AF0A-0057556A3012}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{1D086100-8249-44DA-97DF-3732B42C2121}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{E3A14B4A-F9C1-4883-8F2A-E7C4ADB02F8C}"
       DTS:ObjectName="FF Src CM Transactions">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FF_Src_FullPath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="G:\SSIS_ETL_PROJECTS\TELECOM_SSIS\TELECOM_SSIS\DATA\InputFolder\01_clean_data.csv">
+          DTS:ConnectionString="G:\SSIS_ETL_PROJECTS\TELECOM_SSIS\TELECOM_SSIS\DATA\InputFolder\02_clean_data_with_null.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -108,7 +110,46 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2A3556E9-6186-4EAA-A39A-BFA44E50EFE2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FF_Src_FileExtension">
+      <DTS:VariableValue
+        DTS:DataType="8">.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{05F4073A-0140-4974-A6D2-B72611EEB6A2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FF_Src_FileName">
+      <DTS:VariableValue
+        DTS:DataType="8">02_clean_data_with_null</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A18B85B5-C389-4E55-9124-1B33F513A318}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FF_Src_FolderPath">
+      <DTS:VariableValue
+        DTS:DataType="8">G:\SSIS_ETL_PROJECTS\TELECOM_SSIS\TELECOM_SSIS\DATA\InputFolder\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E87F1BA6-209A-42B5-A941-10E6BA7CF7E3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::FF_Src_FolderPath] +  @[User::FF_Src_FileName] +  @[User::FF_Src_FileExtension]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FF_Src_FullPath">
+      <DTS:VariableValue
+        DTS:DataType="8">G:\SSIS_ETL_PROJECTS\TELECOM_SSIS\TELECOM_SSIS\DATA\InputFolder\02_clean_data_with_null.csv</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\DFT - Load CSV File to DB"
