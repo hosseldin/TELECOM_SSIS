@@ -9,7 +9,7 @@
 ==============================================================*/
 
 -- Switch context to the target database
-USE HOSA_Telecom_ETL;
+USE HM_STAG_ETL_DB;
 GO
 
 -- If the table already exists, drop it (modern syntax SQL Server 2016+)

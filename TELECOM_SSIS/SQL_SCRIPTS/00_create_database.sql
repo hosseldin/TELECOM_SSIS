@@ -1,7 +1,7 @@
 
 /*==============================================================
  Author		: Hossam Mahmoud
- Purpose	: Create the HOSA_Telecom_ETL database
+ Purpose	: Create the HM_STAG_ETL_DB database
  Date			: 2025-08-11
  Notes		: 
 			- Drops the database if it exists
@@ -13,14 +13,14 @@
 USE master;
 GO
 
--- Check if a database named 'HOSA_Telecom_ETL' already exists
+-- Check if a database named 'HM_STAG_ETL_DB' already exists
 -- If it exists, delete (drop) it
 -- New Method
-DROP DATABASE IF EXISTS HOSA_Telecom_ETL;
+DROP DATABASE IF EXISTS HM_STAG_ETL_DB;
 GO
 
--- Create a brand new empty database named 'HOSA_Telecom_ETL'
-CREATE DATABASE HOSA_Telecom_ETL;
+-- Create a brand new empty database named 'HM_STAG_ETL_DB'
+CREATE DATABASE HM_STAG_ETL_DB;
 GO
 
 
