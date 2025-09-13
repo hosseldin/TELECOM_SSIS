@@ -1,9 +1,18 @@
-use EO_Telecom_GrgEdu
+
+/*==============================================================
+ Author		: Hossam Mahmoud
+ Purpose	: Creates the imsi reference table
+ Date			: 2025-08-11
+ Notes		: 
+			- Redirects imsi with transaction_id
+==============================================================*/
+
+-- Switch context to the target database
+use HM_STAG_ETL_DB
 go
 
-if exists (select * from sys.tables where name = 'dim_imsi_reference' and type = 'U')
-drop table dim_imsi_reference
-go
+DROP TABLE IF EXISTS dim_imsi_reference;
+GO
 
 create table dim_imsi_reference (
 	id int identity(1,1),
