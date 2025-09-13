@@ -43,7 +43,11 @@ CREATE TABLE fact_transaction (
 );
 GO
 
+ALTER TABLE fact_transaction
+ALTER COLUMN tac varchar(8) NULL;
 
+ALTER TABLE fact_transaction
+ALTER COLUMN snr varchar(8) NULL;
 
 
 
