@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadData"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{1D086100-8249-44DA-97DF-3732B42C2121}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{ABD12B52-24DE-4A28-BAE8-F512D832478F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -166,20 +166,20 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC"
+              refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="DER Calc SNR &amp; TAC"
+              name="DER Calculate SNR &amp; TAC"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Inputs[Derived Column Input]"
+                  refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Inputs[Derived Column Input]"
                   description="Input to the Derived Column Transformation"
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Inputs[Derived Column Input].Columns[imei]"
+                      refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Inputs[Derived Column Input].Columns[imei]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="14"
@@ -191,20 +191,20 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output]"
+                  refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output]"
                   description="Default Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   name="Derived Column Output"
-                  synchronousInputId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output].Columns[TAC]"
+                      refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output].Columns[TAC]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="8"
-                      lineageId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output].Columns[TAC]"
+                      lineageId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output].Columns[TAC]"
                       name="TAC"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -222,13 +222,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output].Columns[SNR]"
+                      refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output].Columns[SNR]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       length="8"
-                      lineageId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output].Columns[SNR]"
+                      lineageId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output].Columns[SNR]"
                       name="SNR"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -249,23 +249,23 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Error Output]"
+                  refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Error Output]"
                   description="Error Output of the Derived Column Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Derived Column Error Output"
-                  synchronousInputId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Inputs[Derived Column Input]">
+                  synchronousInputId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -348,6 +348,201 @@
               </outputs>
             </component>
             <component
+              refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="DER Replace Blank with Null"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input].Columns[imsi]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="imsi"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imsi]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,9,1252)(#{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imsi]} == "" ? NULL(DT_WSTR,9) : #{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imsi]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,9,1252)(imsi == "" ? NULL(DT_WSTR,9) : imsi)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input].Columns[imei]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="14"
+                      cachedName="imei"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imei]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,14,1252)(#{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imei]} == "" ? NULL(DT_WSTR,14) : #{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imei]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,14,1252)(imei == "" ? NULL(DT_WSTR,14) : imei)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input].Columns[cell]"
+                      cachedDataType="i4"
+                      cachedName="cell"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[cell]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)(#{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[cell]} == 0 ? NULL(DT_I4) : #{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[cell]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)(cell == 0 ? NULL(DT_I4) : cell)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input].Columns[lac]"
+                      cachedDataType="i4"
+                      cachedName="lac"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[lac]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)(#{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[lac]} == 0 ? NULL(DT_I4) : #{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[lac]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)(lac == 0 ? NULL(DT_I4) : lac)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input].Columns[event_type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="event_type"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_type]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,1,1252)(#{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_type]} == "" ? NULL(DT_WSTR,1) : #{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_type]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,1,1252)(event_type == "" ? NULL(DT_WSTR,1) : event_type)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input].Columns[event_ts]"
+                      cachedDataType="date"
+                      cachedName="event_ts"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_ts]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DATE)([ISNULL](#{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_ts]}) ? NULL(DT_DATE) : #{Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_ts]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DATE)(ISNULL(event_ts) ? NULL(DT_DATE) : event_ts)</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\DFT - Load CSV File to DB\FF Src Read Transaction"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -360,7 +555,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
+                  name="RetainNulls">true</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -382,11 +577,11 @@
                       refId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[id]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[id]"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[id]"
                       name="id"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -403,12 +598,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[imsi]"
                       length="9"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imsi]"
                       name="imsi"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -425,12 +620,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[imei]"
                       length="14"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[imei]"
                       name="imei"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -446,11 +641,11 @@
                       refId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[cell]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[cell]"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[cell]"
                       name="cell"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -466,11 +661,11 @@
                       refId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[lac]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[lac]"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[lac]"
                       name="lac"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -487,12 +682,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[event_type]"
                       length="1"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_type]"
                       name="event_type"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -508,11 +703,11 @@
                       refId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_ts]"
                       dataType="date"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="RedirectRow"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].ExternalColumns[event_ts]"
                       lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output].Columns[event_ts]"
                       name="event_ts"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="RedirectRow">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -1102,7 +1297,7 @@ where [refTable].[imsi] = ?</property>
                       cachedLength="8"
                       cachedName="TAC"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\OLE DB Dest Load Transaction.Inputs[OLE DB Destination Input].ExternalColumns[tac]"
-                      lineageId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output].Columns[TAC]" />
+                      lineageId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output].Columns[TAC]" />
                     <inputColumn
                       refId="Package\DFT - Load CSV File to DB\OLE DB Dest Load Transaction.Inputs[OLE DB Destination Input].Columns[SNR]"
                       cachedCodepage="1252"
@@ -1110,7 +1305,7 @@ where [refTable].[imsi] = ?</property>
                       cachedLength="8"
                       cachedName="SNR"
                       externalMetadataColumnId="Package\DFT - Load CSV File to DB\OLE DB Dest Load Transaction.Inputs[OLE DB Destination Input].ExternalColumns[snr]"
-                      lineageId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output].Columns[SNR]" />
+                      lineageId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output].Columns[SNR]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1200,21 +1395,170 @@ where [refTable].[imsi] = ?</property>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\DFT - Load CSV File to DB\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[err_source_output]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLE DB Dest CM HM_STAG_DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLE DB Dest CM HM_STAG_DB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Flat File Source Error Output Column]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Flat File Source Error Output Column"
+                      externalMetadataColumnId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Flat File Source Error Output Column" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load CSV File to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load CSV File to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load CSV File to DB\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
               refId="Package\DFT - Load CSV File to DB.Paths[Derived Column Output]"
-              endId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Inputs[Derived Column Input]"
+              endId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Inputs[Derived Column Input]"
               name="Derived Column Output"
               startId="Package\DFT - Load CSV File to DB\DER Get Subscriber ID.Outputs[Derived Column Output]" />
             <path
               refId="Package\DFT - Load CSV File to DB.Paths[Derived Column Output1]"
               endId="Package\DFT - Load CSV File to DB\OLE DB Dest Load Transaction.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
-              startId="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC.Outputs[Derived Column Output]" />
+              startId="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load CSV File to DB.Paths[Derived Column Output2]"
+              endId="Package\DFT - Load CSV File to DB\LKP SubscriberID.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load CSV File to DB.Paths[Flat File Source Error Output]"
+              endId="Package\DFT - Load CSV File to DB\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Error Output"
+              startId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Error Output]" />
             <path
               refId="Package\DFT - Load CSV File to DB.Paths[Flat File Source Output]"
-              endId="Package\DFT - Load CSV File to DB\LKP SubscriberID.Inputs[Lookup Input]"
+              endId="Package\DFT - Load CSV File to DB\DER Replace Blank with Null.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\DFT - Load CSV File to DB\FF Src Read Transaction.Outputs[Flat File Source Output]" />
             <path
@@ -1257,137 +1601,91 @@ where [refTable].[imsi] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="193,42"
+          Size="263,42"
           Id="Package\DFT - Load CSV File to DB\FF Src Read Transaction"
-          TopLeft="78.3006993006993,45.4755244755245" />
+          TopLeft="368.439393939394,42.5454545454545" />
         <NodeLayout
-          Size="223,42"
+          Size="263,42"
           Id="Package\DFT - Load CSV File to DB\OLE DB Dest Load Transaction"
-          TopLeft="59.1818181818181,408.776223776224" />
+          TopLeft="373.89393939394,396.181818181819" />
         <NodeLayout
           Size="263,42"
           Id="Package\DFT - Load CSV File to DB\OLE DB Dest Error Destination Outputs"
-          TopLeft="39.0279720279721,523.006993006993" />
+          TopLeft="121.166666666667,481.818181818182" />
         <EdgeLayout
           Id="Package\DFT - Load CSV File to DB.Paths[OLE DB Destination Error Output]"
-          TopLeft="170.604895104895,450.776223776224">
+          TopLeft="505.39393939394,438.181818181819">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,72.2307692307691"
+              EndConnector="-252.727272727273,43.6363636363639"
               Start="0,0"
-              End="0,64.7307692307691">
+              End="-252.727272727273,36.1363636363639">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.7307692307691" />
+                    End="0,17.8181818181819" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.8181818181819"
+                    Point2="0,21.8181818181819"
+                    Point3="-4,21.8181818181819" />
+                  <mssgle:LineSegment
+                    End="-248.727272727273,21.8181818181819" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-248.727272727273,21.8181818181819"
+                    Point2="-252.727272727273,21.8181818181819"
+                    Point3="-252.727272727273,25.8181818181819" />
+                  <mssgle:LineSegment
+                    End="-252.727272727273,36.1363636363639" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-73.20890625,26.6485877403845,146.4178125,11.43359375"
+              BoundingBox="-199.572542613636,26.8181818181819,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="160,42"
+          Size="263,42"
           Id="Package\DFT - Load CSV File to DB\LKP SubscriberID"
-          TopLeft="82.3776223776224,132.167832167832" />
-        <EdgeLayout
-          Id="Package\DFT - Load CSV File to DB.Paths[Flat File Source Output]"
-          TopLeft="174.800699300699,87.4755244755245">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.423076923077,44.6923076923077"
-              Start="0,0"
-              End="-12.423076923077,37.1923076923077">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.3461538461538" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.3461538461538"
-                    Point2="0,22.3461538461538"
-                    Point3="-4,22.3461538461538" />
-                  <mssgle:LineSegment
-                    End="-8.42307692307696,22.3461538461538" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.42307692307696,22.3461538461538"
-                    Point2="-12.423076923077,22.3461538461538"
-                    Point3="-12.423076923077,26.3461538461538" />
-                  <mssgle:LineSegment
-                    End="-12.423076923077,37.1923076923077" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="28.439393939394,225.636363636364" />
         <NodeLayout
-          Size="185,42"
+          Size="263,42"
           Id="Package\DFT - Load CSV File to DB\DER Get Subscriber ID"
-          TopLeft="63.2622377622377,213.821678321678" />
-        <EdgeLayout
-          Id="Package\DFT - Load CSV File to DB.Paths[Lookup Match Output]"
-          TopLeft="159.06993006993,174.167832167832">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.6538461538462"
-              Start="0,0"
-              End="0,32.1538461538462">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.1538461538462" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,10.2722355769231,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="426.621212121212,225.818181818182" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\DFT - Load CSV File to DB\DER Calc SNR &amp; TAC"
-          TopLeft="285.454545454545,316.363636363636" />
+          Size="263,42"
+          Id="Package\DFT - Load CSV File to DB\DER Calculate SNR &amp; TAC"
+          TopLeft="610.257575757576,318.727272727273" />
         <EdgeLayout
           Id="Package\DFT - Load CSV File to DB.Paths[Derived Column Output]"
-          TopLeft="155.762237762238,255.821678321678">
+          TopLeft="558.121212121212,267.818181818182">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="218.192307692308,60.5419580419581"
+              EndConnector="183.636363636364,50.9090909090915"
               Start="0,0"
-              End="218.192307692308,53.0419580419581">
+              End="183.636363636364,43.4090909090915">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.270979020979" />
+                    End="0,21.4545454545457" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.270979020979"
-                    Point2="0,30.270979020979"
-                    Point3="4,30.270979020979" />
+                    Point1="0,21.4545454545457"
+                    Point2="0,25.4545454545457"
+                    Point3="4,25.4545454545457" />
                   <mssgle:LineSegment
-                    End="214.192307692308,30.270979020979" />
+                    End="179.636363636364,25.4545454545457" />
                   <mssgle:CubicBezierSegment
-                    Point1="214.192307692308,30.270979020979"
-                    Point2="218.192307692308,30.270979020979"
-                    Point3="218.192307692308,34.270979020979" />
+                    Point1="179.636363636364,25.4545454545457"
+                    Point2="183.636363636364,25.4545454545457"
+                    Point3="183.636363636364,29.4545454545457" />
                   <mssgle:LineSegment
-                    End="218.192307692308,53.0419580419581" />
+                    End="183.636363636364,43.4090909090915" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1398,36 +1696,160 @@ where [refTable].[imsi] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT - Load CSV File to DB.Paths[Derived Column Output1]"
-          TopLeft="373.954545454545,358.363636363636">
+          TopLeft="741.757575757576,360.727272727273">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-203.272727272727,50.4125874125872"
+              EndConnector="-236.363636363636,35.4545454545454"
               Start="0,0"
-              End="-203.272727272727,42.9125874125872">
+              End="-236.363636363636,27.9545454545454">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.2062937062936" />
+                    End="0,13.7272727272727" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.2062937062936"
-                    Point2="0,25.2062937062936"
-                    Point3="-4,25.2062937062936" />
+                    Point1="0,13.7272727272727"
+                    Point2="0,17.7272727272727"
+                    Point3="-4,17.7272727272727" />
                   <mssgle:LineSegment
-                    End="-199.272727272727,25.2062937062936" />
+                    End="-232.363636363636,17.7272727272727" />
                   <mssgle:CubicBezierSegment
-                    Point1="-199.272727272727,25.2062937062936"
-                    Point2="-203.272727272727,25.2062937062936"
-                    Point3="-203.272727272727,29.2062937062936" />
+                    Point1="-232.363636363636,17.7272727272727"
+                    Point2="-236.363636363636,17.7272727272727"
+                    Point3="-236.363636363636,21.7272727272727" />
                   <mssgle:LineSegment
-                    End="-203.272727272727,42.9125874125872" />
+                    End="-236.363636363636,27.9545454545454" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="263,42"
+          Id="Package\DFT - Load CSV File to DB\OLE DB Destination"
+          TopLeft="774.439393939394,46.3636363636364" />
+        <EdgeLayout
+          Id="Package\DFT - Load CSV File to DB.Paths[Flat File Source Error Output]"
+          TopLeft="631.439393939394,65.4545454545454">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="143,0"
+              Start="0,0"
+              End="135.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="135.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.12361328125001,5,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="263,42"
+          Id="Package\DFT - Load CSV File to DB\DER Replace Blank with Null"
+          TopLeft="195.712121212121,140" />
+        <EdgeLayout
+          Id="Package\DFT - Load CSV File to DB.Paths[Flat File Source Output]"
+          TopLeft="499.939393939394,84.5454545454545">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-172.727272727273,55.4545454545454"
+              Start="0,0"
+              End="-172.727272727273,47.9545454545454">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.7272727272727" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.7272727272727"
+                    Point2="0,27.7272727272727"
+                    Point3="-4,27.7272727272727" />
+                  <mssgle:LineSegment
+                    End="-168.727272727273,27.7272727272727" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-168.727272727273,27.7272727272727"
+                    Point2="-172.727272727273,27.7272727272727"
+                    Point3="-172.727272727273,31.7272727272727" />
+                  <mssgle:LineSegment
+                    End="-172.727272727273,47.9545454545454" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load CSV File to DB.Paths[Derived Column Output2]"
+          TopLeft="327.212121212121,182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-167.272727272727,43.6363636363637"
+              Start="0,0"
+              End="-167.272727272727,36.1363636363637">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.8181818181818" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.8181818181818"
+                    Point2="0,21.8181818181818"
+                    Point3="-4,21.8181818181818" />
+                  <mssgle:LineSegment
+                    End="-163.272727272727,21.8181818181818" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-163.272727272727,21.8181818181818"
+                    Point2="-167.272727272727,21.8181818181818"
+                    Point3="-167.272727272727,25.8181818181818" />
+                  <mssgle:LineSegment
+                    End="-167.272727272727,36.1363636363637" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load CSV File to DB.Paths[Lookup Match Output]"
+          TopLeft="291.439393939394,246.727272727273">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="135.181818181818,0"
+              Start="0,0"
+              End="127.681818181818,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="127.681818181818,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.6495223721591,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -1479,6 +1901,19 @@ where [refTable].[imsi] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load CSV File to DB\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
