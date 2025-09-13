@@ -29,3 +29,7 @@ obj/
 *.bak
 *.log
 
+# Database Files
+*.mdf
+*.ldf
+
