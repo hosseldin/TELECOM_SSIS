@@ -14,3 +14,5 @@ To start
 2. In VS, Create a package that will fetch the source data csv file, and put it into the table
 3. Create constraints to reject invalid data not required
 4. 
+
+<img width="1250" height="696" alt="image" src="https://github.com/user-attachments/assets/4d8fffcb-70ec-4f0e-a7f2-98f72463f2b2" />
